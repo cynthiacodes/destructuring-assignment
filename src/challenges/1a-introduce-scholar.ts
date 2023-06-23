@@ -5,9 +5,10 @@ interface Scholar {
 }
 
 function introduceScholar(scholar: Scholar): string {
-  // complete function
+  const {firstName, lastName, cohortNumber} = scholar;
+  const message = `${firstName} ${lastName} is an Academy Scholar, on Cohort ${cohortNumber}.`;
   // use object destructuring, for practice!
-  return "fails test right now";
+  return message;
 }
 
 export default introduceScholar;
